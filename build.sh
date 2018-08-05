@@ -18,7 +18,7 @@ echo "                                                    ";
 echo -e "${txtrst}"
 
 KERNEL_NAME="-Cranium"
-INCREMENTAL_VERSION="V1.0"
+INCREMENTAL_VERSION="V1.01"
 export LOCALVERSION="${KERNEL_NAME}-${INCREMENTAL_VERSION}"
 export KBUILD_BUILD_USER=sakindia123
 export KBUILD_BUILD_HOST=Roaring-Lionus
@@ -39,12 +39,3 @@ echo -e "${txtrst}"
 
 rm ../pack/Image.gz-dtb
 cp out/arch/arm64/boot/Image.gz-dtb ../pack/
-cd ../ && rm ${KERNEL_NAME}-${INCREMENTAL_VERSION}.zip
-cd pack && rm zip -r ../${KERNEL_NAME}-${INCREMENTAL_VERSION}.zip *
-
-echo -e "${bldgrn}"
-echo "                                                    ";
-echo "  Flashable zip is now ready! ....                  ";
-echo "                                                    ";
-echo -e "${txtrst}"
-
