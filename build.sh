@@ -18,11 +18,11 @@ echo "                                                    ";
 echo -e "${txtrst}"
 
 KERNEL_NAME="-Cranium"
-INCREMENTAL_VERSION="V1.01"
+INCREMENTAL_VERSION="V1.0.2"
 export LOCALVERSION="${KERNEL_NAME}-${INCREMENTAL_VERSION}"
 export KBUILD_BUILD_USER=sakindia123
 export KBUILD_BUILD_HOST=Roaring-Lionus
-export PATH=$PATH:/home/sarthak/kernels/toolchains/gnu-gcc-8.2.0/bin
+export PATH=$PATH:/home/sarthak/kernels/toolchains/aarch64-linux-gnu/bin
 export CROSS_COMPILE=aarch64-linux-gnu-
 make ARCH=arm64 distclean
 rm -rf out/
