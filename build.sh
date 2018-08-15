@@ -18,7 +18,7 @@ echo "                                                    ";
 echo -e "${txtrst}"
 
 KERNEL_NAME="-Cranium"
-INCREMENTAL_VERSION="V1.01"
+INCREMENTAL_VERSION="V1.0.2"
 export LOCALVERSION="${KERNEL_NAME}-${INCREMENTAL_VERSION}"
 export KBUILD_BUILD_USER=sakindia123
 export KBUILD_BUILD_HOST=Roaring-Lionus
