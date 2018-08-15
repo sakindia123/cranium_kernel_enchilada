@@ -22,13 +22,13 @@ INCREMENTAL_VERSION="V1.01"
 export LOCALVERSION="${KERNEL_NAME}-${INCREMENTAL_VERSION}"
 export KBUILD_BUILD_USER=sakindia123
 export KBUILD_BUILD_HOST=Roaring-Lionus
-export PATH=$PATH:/home/sarthak/kernels/toolchains/gnu-gcc-8.2.0/bin
+export PATH=$PATH:/home/sarthak/kernels/toolchains/aarch64-linux-gnu/bin
 export CROSS_COMPILE=aarch64-linux-gnu-
 make ARCH=arm64 distclean
 rm -rf out/
 rm kernel_log
 mkdir out
-make ARCH=arm64 O=out cranium_defconfig
+make ARCH=arm64 O=out cranium_los_defconfig
 make ARCH=arm64 O=out -j6 > kernel_log  
 
 echo -e "${bldgrn}"
